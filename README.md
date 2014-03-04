@@ -30,7 +30,7 @@ Example
 ------- 
 Input image (680x170):
 
-[[img src=hockey.jpg alt=original]]
+![alt text][hockey]
 
 Script call:
 ```
@@ -39,4 +39,4 @@ python iresizer.py hockey.jpg -W 200 -H 300 -c
 
 Output image (200x300):
 
-[[img src=hockey_resized.jpg alt=resized]]
+![alt text][hockey_resized]
