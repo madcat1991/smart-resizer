@@ -26,17 +26,28 @@ How to run:
 python iresizer.py kino.jpg -W 400 -H 500 -c
 ```
 
+Script works in three steps. At first step it proprtionally resizes original image. Then it builds saliency map. At last, script cuts image to fit it to new sizes using saliency map. The main idea of the script is to create thumbs and promos of any size from original image.
+
 Example
 ------- 
 Input image (680x170):
 
 ![alt text](https://raw.github.com/madcat1991/smart-resizer/master/hockey.jpg "Original")
 
+
 Script call:
 ```
 python iresizer.py hockey.jpg -W 200 -H 300 -c
 ```
 
-Output image (200x300):
+Step one: proportionally resize (1200x300)
+
+![alt text](https://raw.github.com/madcat1991/smart-resizer/master/prop_resized.jpg "Proportionally resized")
+
+Step two: build saliency map
+
+![alt text](https://raw.github.com/madcat1991/smart-resizer/master/sm.png "Saliency map")
+
+Step three: cut image (200x300):
 
 ![alt text](https://raw.github.com/madcat1991/smart-resizer/master/hockey_resized.jpg "Resized")
