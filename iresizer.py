@@ -13,8 +13,8 @@ import numpy as np
 def find_prop_size(im, width, height):
     current_height, current_width, _ = im.shape
     prop_ratio = max(float(width) / current_width, float(height) / current_height)
-    new_width = int(current_width * prop_ratio)
-    new_height = int(current_height * prop_ratio)
+    new_width = int(round(current_width * prop_ratio))
+    new_height = int(round(current_height * prop_ratio))
     return new_width, new_height
 
 
