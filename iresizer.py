@@ -35,6 +35,10 @@ def get_saliency_map(im_array, sigma=2.5):
 
     # After Effect
     sm = ndimage.gaussian_filter(sm, sigma=sigma)
+    #import matplotlib.pyplot as plt
+    #import matplotlib.cm as cm
+    #plt.imshow(sm, cmap = cm.Greys_r)
+    #plt.show()
     return sm
 
 
